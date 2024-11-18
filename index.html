@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
     integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 </head>
 
 <body>
@@ -58,14 +60,68 @@
   </header>
   <main>
     <section class="about">
-      <h2 class="about__title">О нас</h2>
-      
+      <div class="container about-container flex">
+        <h2 class="about__title">О нас</h2>
+        <div class="about-wrapper flex">
+          <div class="about__content-wrapper">
+            <h3 class="about-content__title">SpaceCream</h3>
+            <p class="about-content__text">Откройте волшебный мир нашего магазина! У нас вы найдете мороженое, которое подарит вам незабываемые вкусовые приключения.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="new">
+      <div class="container">
+        <h2 class="new__title">Новинки</h2>
+      </div>
+        
+      <div class="container-right">
+        <div class="slider">
+          <div class="owl-carousel owl-theme">
+            <div class="slider__item slide">
+              <img class="slide__img" src="img/slider_new/new-1.png" alt="">
+              <h3 class="slide__title">Galaxy Ice Cream</h3>
+              
+            </div>
+            <div class="slider__item slide">
+              <img class="slide__img" src="img/slider_new/new-2.png" alt="">
+              <h3 class="slide__title">Void Vortex</h3>
+            </div>
+            <div class="slider__item slide">
+              <img class="slide__img" src="img/slider_new/new-3.png" alt="">
+              <h3 class="slide__title">Blue Ice Cream</h3>
+            </div>
+            <div class="slider__item slide">
+              <img class="slide__img" src="img/slider_new/new-4.png" alt="">
+              <h3 class="slide__title">Ice Cream Universe</h3>
+            </div> 
+            <div class="slider__item slide">
+                <h3 class="slide__title">5</h3>
+                <img class="slide__img" src="img/slider_new/new-5.png" alt="">
+            </div> 
+            <div class="slider__item slide">
+                <h3 class="slide__title">6</h3>
+                <img class="slide__img" src="img/slider_new/new-6.png" alt="">
+            </div> 
+            <div class="slider__item slide">
+                <h3 class="slide__title">7</h3>
+                <img class="slide__img" src="img/slider_new/new-7.png" alt="">
+            </div> 
+            <div class="slider__item slide">
+                <h3 class="slide__title">8</h3>
+                <img class="slide__img" src="img/slider_new/new-8.png" alt="">
+            </div> 
+          </div>
+        </div>
+      </div>
     </section>
   </main>
   <footer>
 
   </footer>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   <script src="JS/index.js"></script>
 </body>
 
