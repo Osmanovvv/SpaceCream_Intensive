@@ -28,8 +28,8 @@
             <a href="" class="nav__link">Корзина</a>
           </li>
           <li class="list__item">
-            <form action="">
-              <input type="search" required>
+            <form action="" class="header__form">
+              <input type="search" required class="header__input">
               <i class="fa fa-search"></i>
               <button class="search__btn" onclick="clearInput()">Clear</button>
             </form>
@@ -79,9 +79,9 @@
         <div class="slider">
           <div class="owl-carousel owl-theme">
             <div class="slider__item slide">
-              <h3 class="slide__title">Галактическое мороженое</h3>
+              <h3 class="slide__title">Галактическое</h3>
               <img class="slide__img" src="img/slider_new/new-1.png" alt="">
-              <div class="slide__price-btn-wrapper flex ">
+              <div class="slide__price-btn-wrapper flex">
                 <p class="slide__price">300р.</p>
                 <button class="slide__btn btn">Добавить в корзину</button>
               </div>
@@ -135,7 +135,7 @@
               </div>
             </div> 
             <div class="slider__item slide">
-              <h3 class="slide__title">Галактический лёд  </h3>
+              <h3 class="slide__title">Галактический лёд</h3>
               <img class="slide__img" src="img/slider_new/new-8.png" alt="">
               <div class="slide__price-btn-wrapper flex ">
                 <p class="slide__price">300р.</p>
@@ -147,12 +147,57 @@
         </div>
       </div>
     </section>
-    <section class="contact-us">
-      
-    </section>
+    <section class="contact-us flex">
+      <div class="contact-us__wrapper flex">
+        <div class="contact-us__content flex">
+          <h3 class="contact-us__title">Возникли сложности с заказом?</h3>
+          <p class="contact-us__description">Вы можете отправить нам сообщение и наши специалисты ответят на все интересующие вас вопросы</p>
+          <p class="contact-us__description"><b>Заполните форму данными</b></p>
+          <p class="contact-us__description"><span class="contact-us__description-span">Мы на других платформах</span></p>
+          <ul class="contact-us__social social-list list-reset flex">
+            <li class="social-list__item">
+              <a href="" class="social-list__link">
+                <img src="img/inst.png" alt="Instagram" class="social-list__icon">
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a href="" class="social-list__link">
+                <img src="img/twitter.png" alt="Twitter" class="social-list__icon">
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a href="" class="social-list__link">
+                <img src="img/tt.png" alt="TikTok" class="social-list__icon">
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a href="" class="social-list__link">
+                <img src="img/tg.png" alt="Telegram" class="social-list__icon">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="contact-us__form-wrapper">
+          <form class="contact-form">
+            <div class="contact-form__row">
+              <input type="text" placeholder="имя" class="contact-form__input" />
+              <input type="text" placeholder="телефон" class="contact-form__input" />
+            </div>
+            <input type="email" placeholder="эл. почта" class="contact-form__input-email" />
+            <textarea placeholder="комментарий" class="contact-form__textarea"></textarea>
+            <button type="submit" class="contact-form__button">Отправить форму</button>
+          </form>
+        </div>
+      </div>
+    </section>    
   </main>
-  <footer>
-
+  <footer class="footer flex">
+    <div class="container">
+      <div class="footer__content flex">
+        <h3 class="footer__title">SpaceCream</h3>
+        <p class="footer__text-email">spacecream@gmail.com</p>
+      </div>
+    </div>
   </footer>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
