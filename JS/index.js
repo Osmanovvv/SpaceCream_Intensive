@@ -5,7 +5,6 @@ const clearInput = () => {
 }
 
 // Slider
-// Slider
 $(document).ready(function () {
   $('.owl-carousel').owlCarousel({
   responsive: {

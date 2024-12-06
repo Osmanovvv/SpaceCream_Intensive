@@ -150,7 +150,7 @@ body {
 
 header {
   background: url('../img/background_first.png') no-repeat center center / cover;
-  height: 100vh;
+  height: 101vh;
 }
 
 .header__wrapper {
@@ -179,6 +179,30 @@ header {
 
 .nav__link {
   font-size: 20px;
+  cursor: pointer;
+  position: relative;
+}
+
+.link-inner{
+  padding-right: 30px;
+  align-items: center;
+}
+
+.nav__link::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -5px;
+  width: 0;
+  height: 1px;
+  background-color: #c6a284;
+  border: 0;
+  transition: width 0.35s;
+}
+
+.nav-link:hover:before{
+	width: 100%;
 }
 
 .list__item:has(form) {
@@ -222,7 +246,7 @@ header {
 
 .about {
   background: url('../img/about-bg.png') no-repeat center center / cover;
-  height: 100vh;
+  height: 101vh;
   margin-top: -5px;
   padding-top: 50px;
   opacity: 80%;
@@ -270,7 +294,7 @@ header {
 /* new */
 .new {
   background: url('../img/new_bg.png') no-repeat center center / cover;
-  height: 105vh;
+  height: 101vh;
   margin-top: -5px;
   padding-top: 50px;
 }
@@ -291,8 +315,8 @@ header {
 /* Slider */
 
 .slide {
-	padding-left: 30px;
-  padding-right: 40px;
+	padding-left: 25px;
+  padding-right: 45px;
 }
 
 .slide__title {
@@ -303,7 +327,7 @@ header {
 }
 
 .slide__img {
-  height: 270px;
+  height: 250px;
   border-radius: 10px;
 }
 
@@ -345,7 +369,7 @@ header {
   flex-direction: column;
   gap: 20px;
   flex: 1;
-  max-width: 45%;
+  max-width: 35%;
 }
 
 .contact-us__title {
@@ -372,12 +396,11 @@ header {
   width: 50px;
 }
 
-
-
+/* form */
 
 .contact-us__form-wrapper {
   flex: 1;
-  max-width: 45%; 
+  max-width: 30%; 
 }
 
 .contact-form {

@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SpaceCream</title>
+  <link rel="shortcut icon" href="img/img1.png" type="crimea">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
@@ -21,12 +22,16 @@
       </a>
       <nav class="header__nav">
         <ul class="nav__list list-reset flex">
-          <li class="list__item">
-            <a href="" class="nav__link">Каталог</a>
-          </li>
-          <li class="list__item">
-            <a href="" class="nav__link">Корзина</a>
-          </li>
+          <div class="link-inner">
+            <li class="list__item">
+              <a href="html/catalog.html" class="nav__link">Каталог</a>
+            </li>
+          </div>
+          <div class="link-inner">
+            <li class="list__item">
+              <a href="" class="nav__link">Корзина</a>
+            </li>
+          </div>
           <li class="list__item">
             <form action="" class="header__form">
               <input type="search" required class="header__input">
@@ -34,12 +39,16 @@
               <button class="search__btn" onclick="clearInput()">Clear</button>
             </form>
           </li>
-          <li class="list__item">
-            <a href="" class="nav__link">Зарегистрироваться</a>
-          </li>
-          <li class="list__item">
-            <a href="" class="nav__link">Войти</a>
-          </li>
+          <div class="link-inner">
+            <li class="list__item">
+              <a href="" class="nav__link">Зарегистрироваться</a>
+            </li>
+          </div>
+          <div class="link-inner">
+            <li class="list__item">
+              <a href="" class="nav__link">Войти</a>
+            </li>
+          </div>
         </ul>
       </nav>
     </div>
@@ -143,7 +152,7 @@
               </div>
             </div> 
           </div>
-          <a href="#" class="new__link-catalog flex">Перейти в Каталог</a>
+          <a href="html/catalog.html" class="new__link-catalog flex">Перейти в Каталог</a>
         </div>
       </div>
     </section>
@@ -157,22 +166,12 @@
           <ul class="contact-us__social social-list list-reset flex">
             <li class="social-list__item">
               <a href="" class="social-list__link">
-                <img src="img/inst.png" alt="Instagram" class="social-list__icon">
-              </a>
-            </li>
-            <li class="social-list__item">
-              <a href="" class="social-list__link">
-                <img src="img/twitter.png" alt="Twitter" class="social-list__icon">
-              </a>
-            </li>
-            <li class="social-list__item">
-              <a href="" class="social-list__link">
-                <img src="img/tt.png" alt="TikTok" class="social-list__icon">
-              </a>
-            </li>
-            <li class="social-list__item">
-              <a href="" class="social-list__link">
                 <img src="img/tg.png" alt="Telegram" class="social-list__icon">
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a href="" class="social-list__link">
+                <img src="img/vk.png" alt="Vkontakte" class="social-list__icon">
               </a>
             </li>
           </ul>
